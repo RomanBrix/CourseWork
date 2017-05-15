@@ -1,3 +1,3 @@
 # CourseWork
-## Currency Converter
+### Currency Converter
 **by [Roman Brix](https://vk.com/roman_brix)**
