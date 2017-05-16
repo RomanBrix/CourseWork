@@ -65,7 +65,7 @@ export default class App extends Component {
         fx.rates = rates;  // fx from money.js
         const rate = fx(value).from(first).to(second);
         this.setState({
-            answer: rate.toFixed(3)
+            answer: rate.toFixed(2)
         })
 
 

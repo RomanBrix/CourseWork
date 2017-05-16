@@ -17800,7 +17800,7 @@ var App = function (_Component) {
             _money2.default.rates = rates; // fx from money.js
             var rate = (0, _money2.default)(value).from(first).to(second);
             this.setState({
-                answer: rate.toFixed(3)
+                answer: rate.toFixed(2)
             });
         }
     }, {
@@ -17999,7 +17999,7 @@ var Inputs = function (_Component) {
                                 null,
                                 _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'minus-sign' })
                             ),
-                            _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text',
+                            _react2.default.createElement(_reactBootstrap.FormControl, { type: 'number',
                                 placeholder: placehold,
                                 onBlur: function onBlur(e) {
                                     _this2.setState({
@@ -18045,12 +18045,7 @@ var Inputs = function (_Component) {
                             _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text',
                                 placeholder: 'Answer',
                                 value: this.props.answer,
-                                disabled: true,
-                                onBlur: function onBlur(e) {
-                                    _this2.setState({
-                                        value: e.target.value
-                                    });
-                                }
+                                disabled: true
                             })
                         )
                     )
@@ -18123,7 +18118,7 @@ var One_Item = function (_Component) {
             var second = void 0;
             for (var word in item) {
                 first = word;
-                second = item[word].toFixed(3);
+                second = item[word].toFixed(2);
             }
             return _react2.default.createElement(
                 _reactBootstrap.ListGroupItem,

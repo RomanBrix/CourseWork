@@ -8,7 +8,7 @@ export default class One_Item extends Component {
         let second;
         for (let word in item){
             first = word;
-            second = item[word].toFixed(3);
+            second = item[word].toFixed(2);
         }
         return(
             <ListGroupItem>{ second } { first }</ListGroupItem>

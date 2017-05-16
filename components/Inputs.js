@@ -59,7 +59,7 @@ render(){
                         <InputGroup.Addon>
                             <Glyphicon glyph="minus-sign"/>
                         </InputGroup.Addon>
-                        <FormControl type="text"
+                        <FormControl type="number"
                                      placeholder={placehold}
                                      onBlur={(e)=>{
                                         this.setState({
@@ -92,11 +92,6 @@ render(){
                                      placeholder="Answer"
                                      value={this.props.answer}
                                      disabled
-                                     onBlur={(e)=>{
-                                        this.setState({
-                                            value: e.target.value
-                                        })
-                                     }}
                         />
                     </InputGroup>
                 </Col>
